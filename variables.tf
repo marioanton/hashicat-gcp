@@ -11,16 +11,18 @@ variable "project" {
 
 variable "prefix" {
   description = "This prefix will be included in the name of some resources. You can use your own name or any other short string here."
+    default     = "borechain"
+
 }
 
 variable "region" {
   description = "The region where the resources are created."
-  default     = "us-central1"
+  default     = "us-east1"
 }
 
 variable "zone" {
   description = "The zone where the resources are created."
-  default     = "us-central1-b"
+  default     = "us-east1-b"
 }
 
 variable "subnet_prefix" {
